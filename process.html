@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How Carbo-CAP-TEC works: organic residues in, stable biochar and surplus energy out." />
+    <title>Process — CARBO-FORCE</title>
+  </head>
+  <body>
+    <div id="nav-root"></div>
+
+    <main>
+      <section class="section-pad process-hero">
+        <div class="container">
+          <span class="eyebrow" data-i18n="process.hero.eyebrow"></span>
+          <h1 data-i18n="process.hero.title"></h1>
+          <p class="process-hero-subtitle" data-i18n="process.hero.subtitle"></p>
+        </div>
+      </section>
+
+      <section class="scrub-section intake-section" id="intake-section">
+        <div class="scrub-sticky">
+          <canvas id="intake-canvas"></canvas>
+          <div class="scrub-overlay scrub-overlay-light"></div>
+          <div class="scrub-copy scrub-copy-left">
+            <span class="eyebrow" data-i18n="process.intake.eyebrow"></span>
+            <h2 data-i18n="process.intake.title"></h2>
+            <p data-i18n="process.intake.body"></p>
+          </div>
+          <div class="intake-chips" id="intake-chips"></div>
+        </div>
+      </section>
+
+      <section class="pin-section exploded-section" id="exploded-section">
+        <div class="scrub-sticky">
+          <canvas id="exploded-canvas"></canvas>
+          <div class="exploded-head">
+            <span class="eyebrow" data-i18n="process.exploded.eyebrow"></span>
+            <h2 data-i18n="process.exploded.title"></h2>
+          </div>
+          <div class="layer-callouts" id="layer-callouts"></div>
+          <div class="self-sufficiency" id="self-sufficiency" data-i18n="process.exploded.selfSufficiency"></div>
+          <div class="layer-progress" id="layer-progress"></div>
+        </div>
+      </section>
+
+      <section class="scrub-section dual-output-section" id="dual-output-section">
+        <div class="scrub-sticky">
+          <canvas id="dual-canvas"></canvas>
+          <div class="scrub-overlay scrub-overlay-dark"></div>
+          <div class="dual-panel dual-biochar" id="dual-biochar">
+            <span class="eyebrow" data-i18n="process.dualOutput.biochar.eyebrow"></span>
+            <h2 data-i18n="process.dualOutput.biochar.title"></h2>
+            <p data-i18n="process.dualOutput.biochar.body"></p>
+            <div class="stat-pill" data-i18n="process.dualOutput.biochar.stat"></div>
+          </div>
+          <div class="dual-panel dual-energy" id="dual-energy">
+            <span class="eyebrow" data-i18n="process.dualOutput.energy.eyebrow"></span>
+            <h2 data-i18n="process.dualOutput.energy.title"></h2>
+            <p data-i18n="process.dualOutput.energy.body"></p>
+            <div class="energy-tags">
+              <span data-i18n="process.dualOutput.energy.heat"></span>
+              <span data-i18n="process.dualOutput.energy.electricity"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad data-section">
+        <div class="container data-grid">
+          <div class="data-card">
+            <h3 data-i18n="process.data.tempCurve.title"></h3>
+            <div class="temp-curve-wrap">
+              <svg viewBox="0 0 600 260" class="temp-curve" id="temp-curve" preserveAspectRatio="none">
+                <line x1="0" y1="230" x2="600" y2="230" stroke="var(--line)" stroke-width="1" />
+                <path id="temp-curve-path" d="M0,210 C 90,210 110,40 220,32 C 320,26 340,30 400,34 C 460,40 520,140 600,214" fill="none" stroke="#08a8dc" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="data-caption" data-i18n="process.data.tempCurve.caption"></p>
+          </div>
+          <div class="data-card">
+            <h3 data-i18n="process.data.energyBalance.title"></h3>
+            <div class="energy-bars">
+              <div class="energy-bar-col">
+                <div class="energy-bar" id="bar-conventional"><span class="energy-bar-value" data-i18n="process.data.energyBalance.conventionalValue"></span></div>
+                <p data-i18n="process.data.energyBalance.conventionalLabel"></p>
+              </div>
+              <div class="energy-bar-col">
+                <div class="energy-bar energy-bar-positive" id="bar-captec"><span class="energy-bar-value" data-i18n="process.data.energyBalance.capTecValue"></span></div>
+                <p data-i18n="process.data.energyBalance.capTecLabel"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad applications-section">
+        <div class="container">
+          <h2 data-i18n="process.applications.title"></h2>
+          <div class="applications-grid" id="applications-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-pad process-cta">
+        <div class="container">
+          <h2 data-i18n="process.cta.title"></h2>
+          <div class="cta-row">
+            <a href="/contact.html" class="btn btn-primary" data-i18n="process.cta.talkToEngineers"></a>
+            <a href="/contact.html" class="btn btn-outline" data-i18n="process.cta.requestBiochar"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/process.ts"></script>
+  </body>
+</html>
