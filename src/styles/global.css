@@ -114,19 +114,13 @@ button {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.05rem;
-  color: var(--navy-deep);
   white-space: nowrap;
 }
 
-.nav-logo .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--green);
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -250,11 +244,10 @@ button {
   gap: 32px;
 }
 
-.footer-brand {
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: var(--navy-deep);
+.footer-brand img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .footer-tagline {

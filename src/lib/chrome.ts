@@ -17,8 +17,7 @@ export function renderNav(active: PageKey): string {
   <header class="site-nav">
     <div class="container">
       <a href="/" class="nav-logo" aria-label="CARBO-FORCE home">
-        <span class="dot"></span>
-        CARBO-FORCE
+        <img src="/img/logo.webp" alt="CARBO-FORCE" class="nav-logo-img" />
       </a>
       <nav>
         <ul class="nav-links">
@@ -71,7 +70,9 @@ export function renderFooter(content: Content): string {
   <footer class="site-footer">
     <div class="container">
       <div>
-        <div class="footer-brand">CARBO-FORCE</div>
+        <div class="footer-brand">
+          <img src="/img/logo.webp" alt="CARBO-FORCE" class="footer-logo" />
+        </div>
         <p class="footer-tagline" data-i18n="footer.tagline">${content.footer.tagline}</p>
       </div>
       <div class="footer-cols">
